@@ -1,13 +1,9 @@
-.btn-1,.btn-2{
-	font-size: 28px;
-	font-family: Helvetica,"Times new Roman",sans-serif;
+.avatar.proportioned{
+	width: 300px;
+	height: auto;
 }
 
-.btn-1{
-	background-color: black;
-	color: ghostwhite;
-}
-
-.btn-2{
-	background-color: yellow;
+.avatar.distorted{
+	width: 200px;
+	height: 400px;
 }
