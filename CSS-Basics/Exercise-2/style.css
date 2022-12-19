@@ -1,1 +1,23 @@
+.odd{
+	background-color: #D46A6A;
+	font-family: Verdana,"DejaVu Sans",sans-serif;
+}
 
+#number2{
+	color: rgb(32, 5, 120);
+	font-size: 36px;
+}
+/* another way of doing it without a second class
+p+div+p{
+	font-size: 24px;
+}
+*/
+.odd.third{
+	font-size: 24px;
+}
+
+.odd:last-child{
+	background-color: #A1F28C;
+	font-size: 24px;
+	font-weight: bold;
+}
