@@ -1,0 +1,85 @@
+body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding:0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*making the nav match argentina flag colors, and showing the page we're on with a different background*/
+nav{
+    text-align:left;
+    background-color:#6bade4;
+    border-radius:25px;
+    height:50px;
+    font-size:18px;
+    width:30%;
+    margin-left:5%;
+    
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    height:100%;
+    padding-top:15px;
+}
+
+li{
+    display:inline;
+    margin:10px;  
+}
+
+a{
+     text-decoration: none;
+    color:white;
+    
+}
+
+.active{
+    background-color:#032236;
+    padding:15px;
+    border-radius:60px;
+}
+
+.title{
+    font-size:3em;
+    color:#032236;
+    font-family: 'Courgette', cursive;
+}
+
+.title>h1{
+    margin:2%;
+    margin-bottom:0;
+    
+}
+div.title>p{
+    margin-left:10%;
+    font-size:30px;
+    margin-top:0;
+}
+
+/*banner */
+
+header{
+    padding-top:10px;
+    background-image: url(messi-lifting.png);
+    opacity: 0.8;
+    height: 120vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*main section/about section*/
+
+#main>{
+    height:100px;
+    display:block;
+    background-color:#032236;
+}
+
+.main-left{
+    margin-left:2%;
+}
