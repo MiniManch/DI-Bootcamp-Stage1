@@ -1,0 +1,31 @@
+body {
+  max-width: 800px;
+  margin: 0;
+  background-color: #45A9C5;
+}
+
+h1{
+  margin-left:10px;
+}
+div#wrap>p{
+  margin-left:10px;
+}
+
+ul{
+  margin:auto;
+  text-align:center;
+}
+
+li::first-letter{
+  font-size:24px;
+
+}
+
+li{
+  list-style-type:none;
+}
+p{
+	width: 100%;
+}
+
+
