@@ -1,0 +1,39 @@
+body,html{
+	margin: 0;
+	background-color: #364371;
+	height:100%;
+	width:100%;
+}
+
+#wrap{
+	margin:0;
+	width:60%;
+	margin-left:15%;
+	height:100%;
+}
+
+#nav{
+	float:left;
+	margin-right:10px;
+	padding-left:1%;
+	height:80%;
+	padding-right:1%;
+	background-color:#b0cfff;
+	overflow:hidden;
+}
+
+h1{
+	margin-top:0px;
+	padding-top:1%;
+}
+
+#content{
+	float:none;
+	background-color:#5b7fbd;
+	height:80%;
+	width:70%;
+	text-align:center;
+}
+#content>ul>li{
+	list-style-type:none;
+}
