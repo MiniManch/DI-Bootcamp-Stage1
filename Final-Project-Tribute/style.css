@@ -7,6 +7,9 @@ body{
 }
 
 /*making the nav match argentina flag colors, and showing the page we're on with a different background*/
+li>a>img{
+  display:none;  
+}
 .navbar{
     text-align:left;
     background-color:#6bade4;
@@ -41,7 +44,7 @@ a{
 a:hover{
    color:#032236;
     font-weight:bold;
-    font-size:21px;
+    scale:(1.1);
 }
 
 
@@ -52,7 +55,7 @@ a:hover{
 }
 
 .title>h1{
-    margin:2%;
+    margin:4% 2%;
     margin-bottom:0;
     
 }
@@ -84,6 +87,10 @@ header{
 article{
         background-color:#6bade4;
         opacity:0.8;
+}
+
+#about-second{
+  display:none;
 }
 .side-main{
     width:20%;
@@ -117,57 +124,30 @@ div.about{
     margin:0 auto;
     font-size:30px
 }
-
-/* carousel */
-/*  .wrapper-2{
-   display:none;
- } */
-.wrapper {
-  margin-top:5%;
-  margin-left:20%;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-gap: 10px;
-  overflow: hidden;
-  height: 100vh; 
+.container{
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }  
+.container-image{
+    width:300px;
+    height:240px;
+    margin:10px;
+    transition: all 1s;
+  }
+img:hover{
+    margin-top: 10px;
+    transform: scale(1.1);
+  }
 }
 
-.gallery {
-  overflow: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.lil-nav {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.gallery__img {
-  scroll-snap-align: start;
-  margin-bottom: 10px;
-}
-
-.lil-nav a {
-  height: 200px;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.lil-nav__img {
-  object-fit: cover;
-    filter: saturate(0);
-  transition: 0.3s ease all;
-}
-
-
-.lil-nav__img:hover {
-  transform: scale(1.05);
-  filter: saturate(1);
-}
-
-@media (max-width:1140px){
-  .wrapper{
-    display:none;
+/*makig nav a sandwich, needs js to work :(  */
+@media (max-width:1000px){
+  li>a>span{
+    display:none;  
+  }
+  li>a>img{
+    display:inline-flex;;
+    justify-content:space-around;
   }
 }
