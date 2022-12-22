@@ -1,0 +1,46 @@
+body,html{
+	margin: 0;
+	height:100%;
+	width: 100%;
+}
+
+/*purple*/
+.upper-div-rel{
+	background-color: purple;
+	height: 15%;
+	position:relative;
+	top:10%;
+	left:3%;
+	margin-right:20px;
+	width:94%;
+}
+
+.container{
+	display:flex;
+	flex-wrap: wrap;
+	margin-top:5%;
+	margin-left:2%;
+	height: 100%;
+	width: 100%;
+	gap:2px 0;
+
+
+}
+
+.bigger{
+	height:45%;
+	width: 30%;
+	margin:1%;
+}
+
+.orange{
+	background-color: orange;
+}
+
+.red{
+	background-color: darkred;
+}
+
+.blue{
+	background-color: blueviolet;
+}
