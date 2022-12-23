@@ -4,6 +4,7 @@ body{
     height:100%;
     margin: 0;
     padding:0; 
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /*NAV*/
@@ -12,6 +13,30 @@ div>a>img{
   display:none;  
 }
 
+/*.navbar{
+    background-color:#6bade4;
+    border-radius:25px;
+    height:30px;
+    width:300px;
+    position:fixed;
+    margin:0;
+    padding-top:15px;
+    padding-bottom:5px;
+    text-align:left;
+    font-size:18px;
+    z-index:1;
+    order:1;
+}
+
+.nav-container{
+    margin-left: 20px;
+}
+
+.nav-item{
+    display:inline;
+    margin:10px;
+    font-size:20px;
+}*/
 .navbar{
     background-color:#6bade4;
     border-radius:25px;
@@ -23,7 +48,8 @@ div>a>img{
     padding-bottom:5px;
     text-align:left;
     font-size:18px;
-    font-family: 'Nanum Gothic', sans-serif;
+    top:10px;
+    left:50px
 }
 
 .nav-container{
@@ -35,7 +61,6 @@ div>a>img{
     margin:10px;
     font-size:20px;
 }
-
 a{
      text-decoration: none;
     color:white;
@@ -107,7 +132,7 @@ div.title>p{
         position:absolute;
         top:60px;
         left:15px;
-        font-size: 1em;
+        font-size: 1.5em;
         width:100%;
     }
     div.title>p{
@@ -124,7 +149,7 @@ div.title>p{
 
 #main{
     display:block;
-    height:100vh;
+    height:90vh;
     width:100vw;
 }
 
@@ -177,6 +202,9 @@ div.about{
     #main{
         height:50vh;
     }
+    #about-second>h2{
+        margin-bottom:0;
+    }
 }
 
 /*IMAGE GALLERY*/
@@ -184,25 +212,113 @@ div.about{
     margin-top: 2%;
     display: inline-flex;
     flex-wrap:wrap;
-    justify-content: center;
-    z-index: 1;
+    justify-content: space-around;
   }  
 .container-image{
-    width:300px;
-    height:240px;
+    width:500px;
+    height:440px;
     margin:10px;
     filter:brightness(50%);
     transition: all 1s;
   }
-  #container>img:hover{
+  #container>div>img:hover{
      margin-top: 10px;
       transform: scale(1.15);
       filter: brightness(100%);
+
 }
+
 
 
 @media (min-width:1px) and (max-width:796px){
     #container{
         margin: 0;
     }
+}
+/*awards section inside the main */
+
+.awards{
+    display: flex;
+    justify-content: center;
+}
+
+.award-item{
+    width:30%;
+    margin:1%;
+}
+.award-icon{
+    height:100px;
+    width:100px;
+}
+
+.times{
+    font-size:12px;
+    line-height:12px;
+}
+
+.times>h3{
+    font-weight: bold;
+}
+
+.five{
+    padding:0;
+}
+
+.t{
+    display: inline;
+}
+
+.together{
+    margin:6px 3px;
+}
+@media (max-width:796px){
+  .award-icon{
+      height:80px;
+      width:80px;
+  }
+  .times>h3{
+      font-weight: bold;
+      margin:0;
+  }  
+
+}
+/*ADDING IMAGE DESCRIPTION WHEN HOVERING OVER IMAGE*/
+ .des{
+    font-size: 12px;
+        color:whitesmoke;
+        opacity: 0.7;
+        position:relative;
+        left:20px;
+        bottom:50px;
+        transition: all 0.8s;
+ }
+
+@media (min-width:797px){
+    #container>div>img:hover ~ .img-des-1{
+        filter:opacity(0);
+    }
+    .img-des-2{
+        display:none;
+    }
+}
+
+@media (max-width:796px){
+    #container>div>img:hover ~ .img-des-2{
+        filter:opacity(0);
+    }
+    .img-des-1{
+        display:none;
+    }
+}
+
+footer>div{
+    width:100%;
+    background-color:#6bade4; 
+}
+footer{
+    text-align: center;
+    width:100%;
+    height:20px;
+    font-size: 18px;
+    color:white;
 }
