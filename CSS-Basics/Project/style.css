@@ -1,19 +1,15 @@
-/*STEP 1*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/*STEP 2*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*STEP 3*/
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/*STEP 4*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -22,52 +18,45 @@ body {
   padding: 15px;
 }
 
-/*STEP 5*/STEP 8
 main {
   height: calc(100vh - 70px);
   display: flex;
   background-color: #f9f9f9;
- }
+}
 
-/*STEP 6*/
-/* Sidebar */ 
 .side-bar {
   height: 100%;
   width: 17%;
   background-color: white;
   overflow-y: hidden;
-} 
+}
 
-/*STEP 7*/
 @media (max-width: 768px) {
   .side-bar {
     display: none;
   }
 }
 
-/*STEP 8*/
 .left {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .left #menu {
- padding: 0 7px;
- cursor: pointer;
+  padding: 0 7px;
+  cursor: pointer;
 }
 
-/*STEP 9*/
 .search {
  display: flex;
 }
 
 .search form {
- display: flex;
- border: 1px solid #ddd;
- height: 45px;
+  display: flex;
+  border: 1px solid #ddd;
+  height: 45px;
 }
 
-/*STEP 10*/
 .search input {
   width: 600px;
   padding:10px;
@@ -81,7 +70,6 @@ input:focus {
   border: 1px solid #ddd;
 }
 
-/*STEP 11*/
 .search button {
   height: 100%;
   width: 60px;
@@ -98,7 +86,6 @@ input:focus {
   cursor: pointer;
 }
 
-/*STEP 12*/
 .nav {
   width: 100%;
   display: flex;
@@ -126,14 +113,12 @@ input:focus {
   background: #e5e5e5;
 }
 
-/*STEP 13*/
 hr {
   height: 1px;
   background-color: #e5e5e5;
   border: none;
 }
 
-/*STEP 14*/
 .content {
   background-color: #f9f9f9;
   width: 100%;
@@ -141,6 +126,10 @@ hr {
   padding: 15px 15px;
   border-top: 1px solid #ddd;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .videos {
@@ -195,4 +184,3 @@ span {
   color: rgb(96, 96, 96);
   font-size: 12px;
 }
-
