@@ -1,7 +1,9 @@
-# This is a training file
+Some order, since I went through the projects again and again 
 
-this is just text
+<div>
+     <a href="https://github.com/MiniManch/DI-Bootcamp-Stage1/tree/main/Final-Project-Tribute-3rd">Final-Project-Tribute</a>
+</div>
 
-# This was added on my local computer
-
-this is text that was added on my local computer
+<div>
+    <a href="https://github.com/MiniManch/DI-Bootcamp-Stage1/tree/main/CSS-Basics/Project%20-%20Copy">Final-Project-Youtube clone</a> 
+</div
