@@ -48,7 +48,7 @@ a:hover{
 }
 
 /* NAV MOBILE UI*/
-@media (min-width: 1px) and (max-width:796px){
+@media (min-width: 1px) and (max-width:900px){
     .navbar{
         width:150px;
         margin-left:5%;  
@@ -68,7 +68,7 @@ a:hover{
 }
 
 /*NAV BIG SCREEN UI*/
-@media (min-width:797px){
+@media (min-width:900px){
    .navbar{
        margin-left:5%;  
    } 
@@ -103,7 +103,7 @@ div.title>p{
 }
 
 /*MOBILE UI*/
-@media (min-width:1px) and (max-width:796px){
+@media (min-width:1px) and (max-width:900px){
     .title{
         position:absolute;
         top:60px;
@@ -168,7 +168,7 @@ div.about{
     margin:0 auto;
     font-size:30px
 }
-@media (min-width:1px) and (max-width:796px){
+@media (min-width:1px) and (max-width:900px){
     #about-main{
         display:none;
     }
@@ -176,7 +176,7 @@ div.about{
         display: block;
     }
     #main{
-        height:50vh;
+        height:60vh;
     }
     #about-second>h2{
         margin-bottom:0;
@@ -206,7 +206,7 @@ div.about{
 
 
 
-@media (min-width:1px) and (max-width:796px){
+@media (min-width:1px) and (max-width:900px){
     #container{
         margin: 0;
     }
@@ -223,8 +223,8 @@ div.about{
     margin:1%;
 }
 .award-icon{
-    height:100px;
-    width:100px;
+    height:30%;
+    width:50%;
 }
 
 .times{
@@ -244,14 +244,21 @@ div.about{
     display: inline;
 }
 
+.t:last-child{
+    margin-left: 5%;
+}
+
+#ballon>p{
+    margin-left: 2%;
+}
 .together{
     margin:6px 3px;
 }
-@media (max-width:796px){
-  .award-icon{
+@media (max-width:900px){
+  /*.award-icon{
       height:80px;
       width:80px;
-  }
+  }*/
   .times>h3{
       font-weight: bold;
       margin:0;
@@ -270,7 +277,7 @@ div.about{
         width:500px;
  }
 
-@media (min-width:797px){
+@media (min-width:900px){
     #container>div>img:hover ~ .img-des-1{
         filter:opacity(0);
     }
@@ -279,7 +286,7 @@ div.about{
     }
 }
 
-@media (max-width:796px){
+@media (max-width:899px){
     #container>div>img:hover ~ .img-des-2{
         filter:opacity(0);
     }
